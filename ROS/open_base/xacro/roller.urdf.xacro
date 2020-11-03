@@ -61,6 +61,14 @@
 
 		</joint>
 
+		<gazebo reference="roller_${name}_rim_${parent}_link">
+      <mu1 value="200"/>
+      <mu2 value="200"/>
+      <kp value="10000000.0"/>
+      <kd value="1.0"/>
+      <minDepth>0.01</minDepth>
+    </gazebo>
+
 	</xacro:macro>
 
 </robot>
